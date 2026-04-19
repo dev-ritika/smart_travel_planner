@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:image_picker/image_picker.dart';
 
 class TaskDataModel {
+  final String taskId;
   final String category;
   final String title;
   final String description;
@@ -11,6 +12,7 @@ class TaskDataModel {
 
   TaskDataModel({
     required this.description,
+    required this.taskId,
     required this.category,
     DateTime? dueDate,
     this.imageFile,
@@ -18,6 +20,7 @@ class TaskDataModel {
   }) : dueDate = dueDate ?? DateTime.now();
 
   TaskDataModel copyWith({
+    String? taskId,
     String? category,
     String? title,
     String? description,
@@ -25,9 +28,12 @@ class TaskDataModel {
     XFile? imageFile,
   }) {
     return TaskDataModel(
+      taskId: taskId ?? this.taskId,
       description: description ?? this.description,
       category: category ?? this.category,
       title: title ?? this.title,
+      dueDate: dueDate ?? this.dueDate,
+      imageFile: imageFile ?? this.imageFile,
     );
   }
 
@@ -38,6 +44,7 @@ class TaskDataModel {
       "description": taskDataModel.description,
       "dueDate": taskDataModel.dueDate,
       "imageFile": taskDataModel.imageFile,
+      "taskId": taskDataModel.taskId,
     };
   }
 
@@ -48,6 +55,7 @@ class TaskDataModel {
       title: data["title"],
       dueDate: data["dueDate"],
       imageFile: data["imageFile"],
+      taskId: data["taskId"],
     );
   }
 }

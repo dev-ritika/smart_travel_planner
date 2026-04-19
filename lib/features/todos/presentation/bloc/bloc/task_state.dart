@@ -19,7 +19,6 @@ class TaskState extends Equatable {
     bool? isAdded,
     bool? isFormAdded,
   }) {
-    print("hereee state " + (taskDataModel?.first.title.toString() ?? ""));
     return TaskState(
       isLoading: isLoading ?? this.isLoading,
       taskDataModel: taskDataModel ?? this.taskDataModel,
