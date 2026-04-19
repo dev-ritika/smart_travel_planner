@@ -59,7 +59,7 @@ class _SplashStartButtonState extends State<SplashStartButton>
                         onTap: () {
                           Navigator.of(
                             context,
-                          ).pushNamed(NamedRoutes.todoScreen);
+                          ).pushNamed(NamedRoutes.addTaskScreen);
                         },
                         child: Ink(
                           child: Ink(

@@ -4,7 +4,7 @@ sealed class TaskEvent extends Equatable {
   const TaskEvent();
 
   @override
-  List<Object> get props => [];
+  List<Object?> get props => [];
 }
 
 class AddTaskEvent extends TaskEvent {
@@ -13,5 +13,23 @@ class AddTaskEvent extends TaskEvent {
   const AddTaskEvent({required this.taskDataModel});
 
   @override
-  List<Object> get props => [taskDataModel];
+  List<Object?> get props => [taskDataModel];
+}
+
+class FormValidEvent extends TaskEvent {
+  final bool isFormValid;
+
+  const FormValidEvent({required this.isFormValid});
+
+  @override
+  List<Object?> get props => [isFormValid];
+}
+
+class AddImageEvent extends TaskEvent {
+  final XFile? taskImage;
+
+  const AddImageEvent({required this.taskImage});
+
+  @override
+  List<Object?> get props => [taskImage];
 }
