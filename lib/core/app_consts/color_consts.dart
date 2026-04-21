@@ -5,4 +5,5 @@ class ColorConsts {
   static final Color primaryColor = Color(0xff5F33E1);
   static final Color whiteColor = Colors.white;
   static final Color secondaryColor = Color(0xffEEE9FF);
+  static final Color blackColor = Color(0xff000000);
 }

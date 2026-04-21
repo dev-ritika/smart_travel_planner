@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:integrated_todo/features/home/screen/home_screen.dart';
+import 'package:integrated_todo/features/home/presentation/screen/home_screen.dart';
 import 'package:integrated_todo/features/home_nav/screen/nav_screen.dart';
 import 'package:integrated_todo/features/splash/screens/splash_screen.dart';
 import 'package:integrated_todo/features/todos/data/models/task_data_model.dart';

@@ -1,7 +1,7 @@
 import 'package:animated_notch_bottom_bar/animated_notch_bottom_bar/animated_notch_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:integrated_todo/core/app_consts/color_consts.dart';
-import 'package:integrated_todo/features/home/screen/home_screen.dart';
+import 'package:integrated_todo/features/home/presentation/screen/home_screen.dart';
 import 'package:integrated_todo/features/todos/presentation/screens/addtask_screen.dart';
 import 'package:integrated_todo/features/todos/presentation/screens/tasks_screen.dart';
 
